@@ -29,7 +29,7 @@ Die Dateien werden von [dnsmasq](http://www.thekelleys.org.uk/dnsmasq/docs/dnsma
 Die PTR-Records werden von einem Script automatisch erzeugt.
 
 
-__ ! Läuft im Moment nur auf GW2 ! __
+__! Läuft im Moment nur auf GW2 !__
 
 Die DNS-Anfragen werden nur aufgelöst wenn derjenige Host ein Lease vom DHCP hat.
 Die IP sollte daher auf den Dienst-Server nicht statisch vergeben werden.
