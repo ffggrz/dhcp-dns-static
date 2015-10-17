@@ -2,11 +2,15 @@ feste IPs und passende Domain für interne Dienste
 
 Domain: *.ffggrz
 IPv4: 10.181.0.100 - 199
-IPv6: fdb5:78b:64cc::100 - 199 (wie die IPv6-Vergabe funktioniert muss ich erst nachlesen)
+IPv6: fdb5:78b:64cc::100 - 199 (wird erstmal nicht unterstsützt)
 
 Die Dateien werden alle 15 Minuten vom GW abgeholt. Automatisch wird ein PTR-Record generiert.
 
 Zur Syntax:
+
+[<hwaddr>][,id:<client_id>|*][,set:<tag>][,<ipaddr>][,<hostname>][,<lease_time>][,ignore]
+
+Wir nutzn davon aber nur 3 Optionen:
 
 MAC,Domain,IPv4
 
@@ -17,5 +21,5 @@ Die PTR-Records werden von einem Script automatisch erzeugt.
 
 Läuft im Moment nur auf GW2!
 
-Eigenartigerweise werden die DNS-Anfragen nur aufgelöst wenn der jenige Host ein Lease vom DHCP hat.
+Die DNS-Anfragen werden nur aufgelöst wenn der jenige Host ein Lease vom DHCP hat.
 Die IP sollte daher auf den Dienst-Server nicht statisch vergeben werden.
