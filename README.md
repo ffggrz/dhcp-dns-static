@@ -17,7 +17,7 @@ MAC, Domain, IPv4
 
 
 __Beispiel:__  
-> `# Kommentar`  
+> `# Kommentar (Kontakt / Name)`  
 > `00:11:22:AA:BB:CC,beispiel.ffggrz,10.181.0.101`
 
 
