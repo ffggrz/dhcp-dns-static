@@ -12,6 +12,7 @@ MAC,Domain,IPv4
 
 Die Dateien werden von dnsmasq mit der Konfigurationszeile "dhcp-hostsfile" eingelesen.
 http://www.thekelleys.org.uk/dnsmasq/docs/dnsmasq-man.html
+Die PTR-Records werden von einem Script automatisch erzeugt.
 
 
 Läuft im Moment nur auf GW2!
