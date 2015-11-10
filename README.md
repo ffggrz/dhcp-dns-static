@@ -12,14 +12,14 @@ Hier werden feste IPs und die passende Domain für interne Dienste festgelegt
 
 `dhcp-host=[<hwaddr>][,id:<client_id>|*][,set:<tag>][,<ipaddr>][,<hostname>][,<lease_time>][,ignore]`  
 
-Wir nutzen davon aber nur drei Optionen:  
-MAC, Domain, IPv4
+Wir nutzen davon aber nur zwei Optionen:  
+MAC, IPv4
 
 
 __Beispiel:__  
 > `# Kommentar (Kontakt / Name)`  
-> `dhcp-host=00:11:22:AA:BB:CC,beispiel.ffggrz,10.181.0.101`  
-> `dhcp-host=00:11:22:AA:BB:CC,www.beispiel.ffggrz,10.181.0.101`  
+> `dhcp-host=00:11:22:AA:BB:CC,10.181.0.101`  
+> `dhcp-host=00:11:22:AA:BB:CC,10.181.0.101`  
 
 ### Syntax für ffggrz-dns.conf
 
@@ -38,14 +38,8 @@ __Beispiel:__
 
 ### Hinweise
 
-Grundsätzlich reicht es einen internen Dienst in der ffggrz-static.conf einzutragen!
 Die Dateien werden alle 15 Minuten von den Gateways synchronisiert.
 
 Die Dateien werden von [dnsmasq](http://www.thekelleys.org.uk/dnsmasq/docs/dnsmasq-man.html) mit der Konfigurationszeile "conf-dir" eingelesen.
 Einträge aus ffggrz-static erhalten per Script automatisch einen PTR-Record.
 
-
-__! Läuft im Moment nur auf GW2 !__
-
-Die DNS-Anfragen werden nur aufgelöst wenn derjenige Host ein Lease vom DHCP hat (betrifft nur Einträge in ffggrz-static.conf).
-Die IP sollte daher auf den Dienst-Server nicht statisch vergeben werden.
