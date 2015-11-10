@@ -41,5 +41,3 @@ __Beispiel:__
 Die Dateien werden alle 15 Minuten von den Gateways synchronisiert.
 
 Die Dateien werden von [dnsmasq](http://www.thekelleys.org.uk/dnsmasq/docs/dnsmasq-man.html) mit der Konfigurationszeile "conf-dir" eingelesen.
-Einträge aus ffggrz-static erhalten per Script automatisch einen PTR-Record.
-
