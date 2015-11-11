@@ -1,6 +1,6 @@
 # dhcp-dns-static
 
-Hier werden feste IPs und die passende Domain für interne Dienste festgelegt
+Hier werden feste IPs und die passende Domain für interne Dienste festgelegt.
 
 ### Richtlinien
 
@@ -10,20 +10,19 @@ Hier werden feste IPs und die passende Domain für interne Dienste festgelegt
 
 ### Syntax für ffggrz-static.conf
 
-`dhcp-host=[<hwaddr>][,id:<client_id>|*][,set:<tag>][,<ipaddr>][,<hostname>][,<lease_time>][,ignore]`  
+In dieser Datei werden feste IPs zu einer Hardwareadresse zugeordnet.
 
-Wir nutzen davon aber nur zwei Optionen:  
-MAC, IPv4
-
+`dhcp-host=<hwaddr>,<ipaddr>`
 
 __Beispiel:__  
 > `# Kommentar (Kontakt / Name)`  
-> `dhcp-host=00:11:22:AA:BB:CC,10.181.0.101`  
-> `dhcp-host=00:11:22:AA:BB:CC,10.181.0.101`  
+> `dhcp-host=00:11:22:AA:BB:CC,10.181.0.101` 
 
 ### Syntax für ffggrz-dns.conf
 
-`address=/<domain>/[domain/][<ipaddr>]`  
+In dieser Datei werden ein oder mehr Domains einer IP zugeordnet.
+
+`address=/<domain>/[<domain>/][<ipaddr>]`  
 `mx-host=<mx name>[[,<hostname>],<preference>]`  
 `cname=<cname>,<target>`  
 
