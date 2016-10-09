@@ -7,6 +7,7 @@ Hier werden feste IPs und die passende Domain für interne Dienste festgelegt.
 - **Domain:** *.ffggrz
 - **IPv4:** 10.181.0.100 - 199
 - **IPv6:** fdb5:78b:64cc::100 - 199 (wird erstmal nicht unterstützt)
+- **IPv6:** 2a03:2260:100b::100 - 199 (wird erstmal nicht unterstützt)
 
 ### Syntax für ffggrz-static.conf
 
